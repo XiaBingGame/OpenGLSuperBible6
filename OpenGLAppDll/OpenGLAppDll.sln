@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGLAppDll", "OpenGLAppDll\OpenGLAppDll.vcxproj", "{75FC159B-66CC-4646-B9F9-8CB7E80D5DC4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestApp", "TestApp\TestApp.vcxproj", "{2006A9A1-310D-4501-A280-F6958F6C8B52}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75FC159B-66CC-4646-B9F9-8CB7E80D5DC4} = {75FC159B-66CC-4646-B9F9-8CB7E80D5DC4}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75FC159B-66CC-4646-B9F9-8CB7E80D5DC4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75FC159B-66CC-4646-B9F9-8CB7E80D5DC4}.Debug|Win32.Build.0 = Debug|Win32
+		{75FC159B-66CC-4646-B9F9-8CB7E80D5DC4}.Release|Win32.ActiveCfg = Release|Win32
+		{75FC159B-66CC-4646-B9F9-8CB7E80D5DC4}.Release|Win32.Build.0 = Release|Win32
+		{2006A9A1-310D-4501-A280-F6958F6C8B52}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2006A9A1-310D-4501-A280-F6958F6C8B52}.Debug|Win32.Build.0 = Debug|Win32
+		{2006A9A1-310D-4501-A280-F6958F6C8B52}.Release|Win32.ActiveCfg = Release|Win32
+		{2006A9A1-310D-4501-A280-F6958F6C8B52}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
