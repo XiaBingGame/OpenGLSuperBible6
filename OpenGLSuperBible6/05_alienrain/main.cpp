@@ -5,9 +5,20 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <cmath>
 
-/** \addtogroup Chapter05*   @{*       \addtogroup alienrain** 使用 uniform block. 并使用纹理组数, 根据索引选择不同的单个纹理.*	- 函数 float random_float() 生成 0.0 到 1.0 的随机浮点数.*	- 本例使用 2D 纹理数组. 本例纹理数组有64个2D纹理.*	- 生成的 Buffer 是 GL_UNIFORM_BUFFER, 用于 uniform buffer 绑定点.*	- 使用 glBindBufferBase 将 GL_UNIFORM_BUFFER 的 buffer 绑定至一个 uniform buffer 绑定点.
+/** \addtogroup Chapter05
+*   @{
+*       \addtogroup alienrain
+*
+* 使用 uniform block. 并使用纹理组数, 根据索引选择不同的单个纹理.
+*	- 函数 float random_float() 生成 0.0 到 1.0 的随机浮点数.
+*	- 本例使用 2D 纹理数组. 本例纹理数组有64个2D纹理.
+*	- 生成的 Buffer 是 GL_UNIFORM_BUFFER, 用于 uniform buffer 绑定点.
+*	- 使用 glBindBufferBase 将 GL_UNIFORM_BUFFER 的 buffer 绑定至一个 uniform buffer 绑定点.
 *	- 使用 glMapBufferRange 映射一段范围的 buffer.
-*	- 使用了 glVertexAttrib*() 的 glVertexAttribI*() 的 li 变种.*	- 着色器中, 使用 uniform block 保存了 256 大小的数组, 根据需求取出其中一个进行渲染*       @{*/
+*	- 使用了 glVertexAttrib*() 的 glVertexAttribI*() 的 li 变种.
+*	- 着色器中, 使用 uniform block 保存了 256 大小的数组, 根据需求取出其中一个进行渲染
+*       @{
+*/
 
 
 // Random number generator

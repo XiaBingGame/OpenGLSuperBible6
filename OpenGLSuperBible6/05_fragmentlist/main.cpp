@@ -6,7 +6,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <iostream>
 
-/** \addtogroup Chapter05*   @{*       \addtogroup fragmentlist* 实现片段链表* 使用原子计数器, 着色器可写入的图像(保存索引), 巨大的共享存储块, 实现一个模型的深度透视图.* 使用一张图保存每个像素的索引, 而后使用索引在一个链表内查询该图每个位置的累积渲染内容.*	- 通过 GL_UNIFORM_BUFFER 使用 uniform block buffer.
+/** \addtogroup Chapter05
+*   @{
+*       \addtogroup fragmentlist
+* 实现片段链表
+* 使用原子计数器, 着色器可写入的图像(保存索引), 巨大的共享存储块, 实现一个模型的深度透视图.
+* 使用一张图保存每个像素的索引, 而后使用索引在一个链表内查询该图每个位置的累积渲染内容.
+*	- 通过 GL_UNIFORM_BUFFER 使用 uniform block buffer.
 *	- 使用 GL_SHADER_STORAGE_BUFFER 共享存储块, 该块可以被着色器写入内容.
 * 	- 使用 GL_ATOMIC_COUNTER_BUFFER 原子计数器 buffer.
 * 	- 2维纹理使用的格式 GL_R32UI
@@ -39,7 +45,9 @@
 * 	 		- 使用最后累加的深度值作为颜色结果
 * 	 
 * 	- 其有第二个着色器得到的数据未用到, 如颜色值.
-**       @{*/
+*
+*       @{
+*/
 class fragmentlist_app : public OpenGLApp
 {
 public:
