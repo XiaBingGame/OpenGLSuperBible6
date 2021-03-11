@@ -28,6 +28,8 @@
 #include <GL/GL.h>
 #pragma comment (lib, "opengl32.lib")
 
+// ¼òµ¥µÄWin32´°¿Ú
+
 static struct
 {
     int window_width;
